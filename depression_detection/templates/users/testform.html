@@ -1,0 +1,127 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>depression_detection: A Deep Learning Library for Anomaly Detection</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{%static 'img/bit.jpg'%}" rel="icon">
+  <link href="{%static 'img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{%static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eStartup
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div id="logo">
+        <h1><a href="index.html"><span>Depression_</span> Detection</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="{% url 'UserHome' %}">Home</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'view_data' %}">view_data</a></li>
+
+          <li><a class="nav-link scrollto " href="{% url 'training' %}">training</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'user_input_prediction' %}">prediction</a></li>
+          
+          <li><a class="nav-link scrollto" href="{% url 'index' %}">Logout</a></li>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <br><br> <br><br>
+
+<main>
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-in">
+      <!-- <h1>depression_detection: A Deep Learning Library for Anomaly Detection</h1>
+      <h2>This paper introduces depression_detection, a novel library for unsupervised anomaly detection and localization.</h2>
+       -->
+      <img src="../static/img/depress.jpeg" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+
+    </div>
+    <div>
+      <section id="intro">
+
+    <div align="center" class="intro-text">
+<!--        <div class="container" style="margin-top:-200px;">-->
+
+      <p><h3 align="center" style="color:white; font-weight:bold;">Prediction Form </h3></p>
+        <h2>Result is : <font color="blue">{{result}}</font></h2>
+
+        <form action="{%url 'user_input_prediction'%}" method="post">
+            {%csrf_token%}
+         Enter your state of mind in words: <textarea name="joninfo" id="" cols="100" rows="10"></textarea><br>
+
+            <button type="submit">Predict</button>
+            
+        </form>
+
+    </div>
+  </section>
+    </div>
+  </section><!-- End Hero Section -->
+</main>
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+    <div class="copyrights">
+      <div class="container">
+        <p>&copy; Copyrights <b>depression_detection.</b> All rights reserved.</p>
+        <div class="credits">
+          Designed by <a href="#"><b>depression_detection.</b></a>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+
+</body>
+
+</html>
+
+
+
+
+ 

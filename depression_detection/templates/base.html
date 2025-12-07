@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Depression Detection Using Machine Learning
+    Techniques on Twitter Data</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{%static 'img/bit.jpg'%}" rel="icon">
+  <link href="{%static 'img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{%static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eStartup
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div id="logo">
+        <h1><a href="{% url 'index' %}"><span>depression_detection</span> </a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="{% url 'index' %}">HOME</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'AdminLogin' %}">ADMIN-LOGIN</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'UserLogin' %}">USER-LOGIN</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'UserRegister' %}">USER-REGISTER</a></li>
+        </ul>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+
+  {%block contents%}
+  {%endblock%}
+  <section id="hero">
+    
+    <div class="hero-container" data-aos="fade-in">
+      <p> Depression has become a serious problem in this
+        current generation and the number of people affected by
+        depression is increasing day by day. However, some of them
+        manage to acknowledge that they are facing depression while
+        some of them do not know it. On the other hand, the vast
+        progress of social media is becoming their “diary” to share
+        their state of mind. Several kinds of research had been
+        conducted to detect depression through the user post on social
+        media using machine learning algorithms. Through the data
+        available on social media, the researcher can able to know
+        whether the users are facing depression or not. Machine
+        learning algorithm enables to classify the data into correct
+        groups and identify the depressive and non-depressive data.
+        The proposed research work aims to detect the depression of
+        the user by their data, which is shared on social media. The
+        Twitter data is then fed into two different types of classifiers,
+        which are Naïve Bayes and a hybrid model, NBTree. The
+        results will be compared based on the highest accuracy value to
+        determine the best algorithm to detect depression.The results
+        shows both algorithm perform equally by proving same
+        accuracy level.
+        </p>
+      <h1>Depression Detection Using Machine Learning
+        Techniques on Twitter Data</h1>
+      <h2>Machine
+        learning algorithm enables to classify the data into correct
+        groups and identify the depressive and non-depressive data.</h2>
+      <!-- <h1>What is depression_detection?</h1>
+      <h2>depression_detection is an open-source deep learning library developed by Intel that makes it easy to benchmark different anomaly detection algorithms on both public and custom datasets, all by simply modifying a config file.</h2>- -->
+      
+      <!-- <img src="../static/img/depress.jpeg" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">  -->
+    </div>
+  </section><!-- End Hero Section -->
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="padd-section text-center">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Depression Detection Using Machine Learning
+            Techniques on Twitter Data</h2>
+          <p class="separator">Machine
+            learning algorithm enables to classify the data into correct
+            groups and identify the depressive and non-depressive data.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-block">
+              <img src="../static/img/svg/cloud.svg" alt="img">
+              <h4>introducing</h4>
+              <p>Depression Detection Using Machine Learning
+                Techniques on Twitter Data.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-block">
+              <img src="../static/img/svg/planet.svg" alt="img">
+              <h4>Data Cleaning prepocess</h4>
+              <p>Then, the dataset is tokenized by splitting the sentence to
+                each token or word in an array format. The tokenized
+                sentences are then processed to stemming and lemmatization.</p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-block">
+              <img src="../static/img/svg/asteroid.svg" alt="img">
+              <h4> Additional tools</h4>
+              <p>Naïve Bayes: It is a statistical classification origin
+                from Bayes Theorem and it treats the feature in the class as
+                independent of other features. Naive Bayes classifier
+                assumes that the effect of one feature in a class is
+                independent of another feature. Naïve Bayes practices a
+                probabilistic approach which to predict the class of the test
+                data and excel on predicting multiple class..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Get Started Section -->
+
+    <!-- ======= Newsletter Section ======= -->
+    <section id="newsletter" class="newsletter text-center">
+      <div class="overlay padd-section">
+        <div class="container" data-aos="zoom-in">
+
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Newsletter Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="copyrights">
+          <div class="container">
+            <p>&copy; Copyrights <b>depression_detection.</b> All rights reserved.</p>
+            <div class="credits">
+              Designed by <a href="#"><b>depression_detection.</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js'%}"></script>
+</body>
+</html>

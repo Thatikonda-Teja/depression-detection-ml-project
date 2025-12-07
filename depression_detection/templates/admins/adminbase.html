@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>depression_detection: A Deep Learning Library for Anomaly Detection</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{%static 'img/bit.jpg'%}" rel="icon">
+  <link href="{%static 'img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{%static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eStartup
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div id="logo">
+        <h1><a href="index.html"><span></span>Depression_detection</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="{% url 'AdminHome' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'RegisterUsersView' %}">User Details</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'index' %}">Logout</a></li>
+        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <br><br> <br><br>
+  {%block contents%}
+
+  {%endblock%}
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-in">
+      <!-- <h1>depression_detection: A Deep Learning Library for Anomaly Detection</h1>
+      <h2>This paper introduces depression_detection, a novel library for unsupervised anomaly detection and localization.</h2>
+       -->
+      <img src="../static/img/depress.jpeg" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+
+    </div>
+  </section><!-- End Hero Section -->
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="padd-section text-center">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+
+          <h2>A Deep Learning Library for Anomaly Detection</h2>
+          <p class="separator">This open-source library provides algorithms from the literature and a set of tools to design custom anomaly detection algorithms via a plug-and-play approach.</p>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-block">
+
+              <img src="../static/img/svg/cloud.svg" alt="img">
+              <h4>introducing</h4>
+              <p>depression_detection is an extensive library for the design, implementation, and deployment of unsupervised anomaly detection models from data to the edge.</p>
+             
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-block">
+
+              <img src="../static/img/svg/planet.svg" alt="img">
+              <h4>user friendly interface</h4>
+              <p>A user-friendly interface is a software interface where the user can easily understand and navigate through the application in an efficient way.</p>
+              <a href="#"></a>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-block">
+
+              <img src="../static/img/svg/asteroid.svg" alt="img">
+              <h4> Additional tools</h4>
+              <p>Experiment trackers, visualizers, and hyper-parameter optimizers, make it simple to design and implement anomaly detection models.</p>
+              
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Get Started Section -->
+
+    <!-- ======= Newsletter Section ======= -->
+    <section id="newsletter" class="newsletter text-center">
+      <div class="overlay padd-section">
+        <div class="container" data-aos="zoom-in">
+
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Newsletter Section -->/
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+    <div class="copyrights">
+      <div class="container">
+        <p>&copy; Copyrights <b>depression_detection.</b> All rights reserved.</p>
+        <div class="credits">
+          Designed by <a href="#"><b>depression_detection.</b></a>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js'%}"></script>
+
+</body>
+
+</html>
