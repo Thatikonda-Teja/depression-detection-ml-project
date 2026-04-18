@@ -105,6 +105,9 @@ def preprocess(request):
     new_data['tweet'] = new_data['tweet'].apply(clean_text)
 
     from nltk.stem import WordNetLemmatizer
+    import nltk
+    nltk.download('wordnet', quiet=True)
+    nltk.download('omw-1.4', quiet=True)
 
     lematizer=WordNetLemmatizer()
 
