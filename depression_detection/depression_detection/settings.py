@@ -29,6 +29,8 @@ SECRET_KEY = config('SECRET_KEY', default='your-secret-key-here')
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = ['*']
+# WhiteNoise configuration
+WHITENOISE_MANIFEST_STRICT = False
 
 
 # Application definition
@@ -131,7 +133,7 @@ STATICFILES_DIRS = [
 
 # Use WhiteNoise only in production
 if not DEBUG:
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'  # More reliable for initial builds
 else:
     # In development, Django serves static files automatically
     STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
