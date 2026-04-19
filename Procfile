@@ -1,1 +1,1 @@
-web: gunicorn --chdir depression_detection depression_detection.wsgi --bind 0.0.0.0:$PORT
+web: cd depression_detection && gunicorn depression_detection.wsgi --bind 0.0.0.0:$PORT

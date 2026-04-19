@@ -408,10 +408,21 @@ span {
 #hero {
   width: 100%;
   height: calc(100vh - 40px);
-  background: url(../img/hero-bg.png) center bottom no-repeat;
-  background-size: 100%;
+  background: url(../img/hero-background.png) center center no-repeat;
+  background-size: cover;
   position: relative;
   margin-top: 40px;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
 }
 
 @media (min-width: 1025px) {
@@ -443,6 +454,8 @@ span {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  z-index: 1;
+  padding: 0 30px;
 }
 
 #hero h1 {
@@ -462,7 +475,7 @@ span {
 }
 
 #hero h2 {
-  color: #777;
+  color: #ddd;
   margin-bottom: 30px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -475,6 +488,13 @@ span {
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+
+#hero p {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 900px;
 }
 
 #hero img {
@@ -505,7 +525,7 @@ span {
 }
 
 #hero .btns a {
-  color: #555;
+  color: #eee;
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;

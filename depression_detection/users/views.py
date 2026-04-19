@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import render, HttpResponse
 from django.contrib import messages
 from sklearn.tree import DecisionTreeClassifier
@@ -56,8 +57,8 @@ def view_data(request):
     from django.conf import settings
     import pandas as pd
     import numpy as np
-    path = settings.MEDIA_ROOT + '\\' + 'depression.csv'
-    path1 = settings.MEDIA_ROOT + '\\' + 'no_depression.csv'
+    path = os.path.join(settings.MEDIA_ROOT, 'depression.csv')
+    path1 = os.path.join(settings.MEDIA_ROOT, 'no_depression.csv')
     clean = pd.read_csv(path)
     not_clean = pd.read_csv(path1)
     clean['class'] = 1
@@ -71,8 +72,8 @@ def preprocess(request):
     from django.conf import settings
     import pandas as pd
     import numpy as np
-    path = settings.MEDIA_ROOT + '\\' + 'depression.csv'
-    path1 = settings.MEDIA_ROOT + '\\' + 'no_depression.csv'
+    path = os.path.join(settings.MEDIA_ROOT, 'depression.csv')
+    path1 = os.path.join(settings.MEDIA_ROOT, 'no_depression.csv')
     clean = pd.read_csv(path)
     not_clean = pd.read_csv(path1)
     clean['class'] = 1
